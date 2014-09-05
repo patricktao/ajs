@@ -5,9 +5,7 @@
   <title>AngularJS Concepts:View and Controllers: ngClass with firebase</title>
 
   <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-  <script type="text/javascript" src="js/angular.js"></script>
-  <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
-  <script src='https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js'></script>
+  
 </head>
 
 <body ng-app>
@@ -19,10 +17,14 @@
     <h1>Box-B</h1>
   </div> <!--box-B content end-->
 
-  <input type="text" id="borderStyleInput"  placeholder="Type: borderThin or borderThick">
+  <input type="text" id="borderStyleInput" value = "borderThin" placeholder="Type: borderThin or borderThick"/>
+
+  <script type="text/javascript" src="js/angular.js"></script>
+  <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+  <script src='https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js'></script>
   <script>
     var Data = new Firebase("https://dazzling-fire-5080.firebaseIO.com/");
-    var name = $('#borderStyleInput').val();
+    var name = document.getElementById("borderStyleInput").value;
     Data.push({style: name});
   </script>
 </body>
