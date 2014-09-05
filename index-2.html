@@ -23,6 +23,7 @@
   <script>
     var Data = new Firebase("https://dazzling-fire-5080.firebaseIO.com/");
     var name = $('#borderStyleInput').val();
+    console.log(name);
     Data.push({style: name});
   </script>
 </body>
