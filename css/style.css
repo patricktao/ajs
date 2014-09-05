@@ -1,0 +1,23 @@
+/* -- Global Properties --------------------- */
+body {background-color: #FFFFFF}
+.bold {font-weight: bold}
+.borderThin {border: 5px solid #1CA9D8}
+.borderThick {border: 25px solid #F7FB04}
+
+/* -- Box Properties  -------------------------------- */
+#box-A, #box-B {
+  position: fixed; top:50px;
+  width: 250px;
+  padding: 10px;
+  background: #ad2f00;
+  color: #FFFFFF;
+  font-size: 90%;
+}
+
+#box-B {
+  left:400px;
+}
+
+#box-A {
+  left:50px;
+}

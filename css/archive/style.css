@@ -1,0 +1,65 @@
+/* -- Global Properties --------------------- */
+body {background-color: #000000}
+.bold {font-weight: bold}
+
+h1 {font: 18px "Asap", Tahoma; color: #ffffff}
+h2 {font: 28px "Asap", Trebuchet; color: #5171ae; line-height: 0px; padding: 2px 0 14px 0; letter-spacing: -2px}
+
+/* -- Header -------------------------------- */
+header {height: 220px; /* border: thin solid white */}
+
+#siteLogo {float: left; padding: 8px 0px 0px 8px; /* border: thin solid white */}
+#siteLogo > a {font: 27px "Asap", Arial; color: #ad2f00; text-decoration: none; /* border: thin solid white */}
+#siteLogo > a > p {font-size: 13px; color: #ffffff}
+
+#pop-up {
+          display: none;
+          position: absolute;
+          width: 250px;
+          padding: 10px;
+          background: #ad2f00;
+          color: #000000;
+          border: 1px solid #1a1a1a;
+          font-size: 90%;
+        }
+
+header > nav {float: right; padding: 37px 20px 0px 0px; /* border: thin solid white */}
+header > nav > ul > li {float: left; margin-left: 10px; position: relative; /* border: thin solid red */}
+header > nav > ul > li > a {display: block; font-family: "Asap"; text-decoration: none; font-size: 19px; font-weight: normal; color: #3b3837; text-shadow: 1px 1px #7F7F7F}
+
+/* -- About and Teaching Content ------------ */
+#about {}
+
+#abContainer {font-family: "Asap"; font-size: 15px; color: #000000; text-align: left; width: 600px}
+#mybkgd {width: 180px; height: 350px; float: left; font-size: 13px; color: #000000; padding: 10px 2.5px 10px 0px;}
+#myscience {width: 400px; height: 620px; float: right; padding: 2.5px 2.5px 0px 2.5px; background-color: #F2F2F2}
+#myscience > p {text-align: justify}
+
+#teaching > ul {list-style-type: circle; padding-left: 20px}
+#teaching > ul li {margin-bottom: 5px}
+#teaching > p {font: 15px "Asap"; color: #000000}
+
+/* -- Books Content ------------------------- */
+#books {}
+#bkJSQRS {width: 729px; margin: 30px auto; position: relative; height: 300px}
+
+/* -- News Content -------------------------- */
+#nPgSLD {}
+
+/* -- Research Content ---------------------- */
+#research {}
+#rPgSLD {}
+
+#research > nav {float: left; padding: 37px 20px 0px 0px; /* border: thin solid white */}
+#research > nav > ul > li {float: left; margin-left: 10px; position: relative; /* border: thin solid red */}
+#research > nav > ul > li > a {display: block; font-family: "Asap"; text-decoration: none; font-size: 17px; font-weight: normal; color: #3b3837; text-shadow: 1px 1px #4e4e4e}
+
+#rSLD {font: 17px "Asap", Tahoma; color: #000000; width: 580px; height: 350px; padding: 10px 10px 0px 0px}
+#rS1 > img {float: right; margin-left: 10px}
+#rS1 > p {text-align: justify}
+
+#rS2 > img {float: right; margin-left: 10px}
+#rS2 > p {text-align: left}
+
+#rS3 > img {float: right; margin-left: 10px}
+#rS3 > p {text-align: left}

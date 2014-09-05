@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+
+<head>
+  <title>AngularJS Concepts:View and Controllers: ngClass with firebase</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <script type="text/javascript" src="js/angular.js"></script>
+  <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+  <script src='https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js'></script>
+</head>
+
+<body ng-controller="Ctrl">
+  <script>
+    var exampleApp = angular.module("exampleApp", ["firebase"]);
+    exampleApp.controller('Ctrl', ['$scope', '$firebase', function($scope, $firebase) {
+        var ref = new Firebase("https://dazzling-fire-5080.firebaseIO.com/");
+        $scope.messages = $firebase(ref).$asArray();
+      }
+    ]);
+  </script>
+
+  <div id="box-A" ng-class="style">
+    <h1>Box-A</h1>
+  </div> <!--box-A content end-->
+
+  <div id="box-B" class="borderThin">
+    <h1>Box-B</h1>
+  </div> <!--box-B content end-->
+
+<input type="text" ng-model="style" placeholder="Type: borderThin or borderThick">
+</body>
+
+</html>
